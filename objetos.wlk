@@ -97,7 +97,7 @@ object banquito {
 object cajita {
   var peso = 400
   var objetoAdentro = arito
-  method cambiarObjeto(nuevoObjeto){
+  method cambiarObjetoAdentro(nuevoObjeto){
     objetoAdentro = nuevoObjeto
   }
   method color(){
@@ -106,12 +106,13 @@ object cajita {
   method material(){
     return cobre
   }
-  method cambiarPeso(){
-    peso = peso + objetoAdentro.peso()
-  }
   method objetoAdentro(){
     return objetoAdentro
   }
+  method peso() {
+    return peso + self.objetoAdentro().peso()
+  }
+ 
 }
 
 //materiales: lino, madera, cuero, cobre, vidrio
