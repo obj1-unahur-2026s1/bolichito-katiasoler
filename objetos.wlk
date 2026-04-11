@@ -95,7 +95,7 @@ object banquito {
   }
 }
 object cajita {
-  var peso = 400
+  const peso = 400
   var objetoAdentro = arito
   method cambiarObjetoAdentro(nuevoObjeto){
     objetoAdentro = nuevoObjeto
